@@ -100,7 +100,7 @@ app.get('/api/persons/:id', (request, response) => {
 })
 
 app.get('/', (req, res) => {
-    res.send('<h1>Hei Eestinlaakson haalarilapset!</h1>')
+    res.send('<h1>Hei maailma!</h1>')
   })
   
   app.get('/api/persons', (req, res) => {
