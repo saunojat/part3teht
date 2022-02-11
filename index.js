@@ -111,7 +111,7 @@ app.get('/', (req, res) => {
     res.send('Phonebook has info for ' + persons.length + ' persons' + '<br><br>' + Date()) //Huom. Vain lainausmerkkien sisällä oleva res.send(sisältö) <- sisältö on HTML:ää, eli en voi laittaa p-tägejä koko res.send(sisältö) <-sisällön ympärille.
   })
 
-const PORT = process.env.port || 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT, ()=>{
     console.log(`Server running on port ${PORT}`)
 })
